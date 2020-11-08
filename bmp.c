@@ -40,7 +40,7 @@ static int
 	set_int_in_char(bmpfileheader + 18, tmp);
 	tmp = game->window.size.y;
 	set_int_in_char(bmpfileheader + 22, tmp);
-	bmpfileheader[27] = (unsigned char)(1);
+	bmpfileheader[26] = (unsigned char)(1);
 	bmpfileheader[28] = (unsigned char)(24);
 	return (!(write(fd, bmpfileheader, 54) < 0));
 }
